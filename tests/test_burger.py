@@ -57,7 +57,6 @@ class TestBurger:
     # Тест на получение состава бургера
 
     def test_get_receipt(self):
-        burger = Burger()
         mock_bun = Mock()
         mock_bun.get_name.return_value = 'Флюоресцентная булка R2-D3'
         mock_bun.get_price.return_value = 988.0
