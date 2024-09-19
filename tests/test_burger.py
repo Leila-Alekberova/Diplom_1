@@ -14,7 +14,7 @@ class TestBurger:
         burger.set_buns(bun)
         assert burger.bun == bun
 
-    # Тест на добавление ингридиентов
+    # Тест на добавление ингредиентов
 
     def test_add_ingredient(self):
         burger = Burger()
@@ -25,7 +25,7 @@ class TestBurger:
         burger.add_ingredient(mock_ingredient)
         assert burger.ingredients == [mock_ingredient]
 
-    # Тест на удаление ингридиентов
+    # Тест на удаление ингредиентов
     def test_remove_ingredient(self):
         burger = Burger()
         mock_ingredient_1 = Mock()
@@ -34,7 +34,7 @@ class TestBurger:
         burger.remove_ingredient(0)
         assert len(burger.ingredients) == 1
 
-    #Тест на изменения порядка ингридиентов
+    # Тест на изменения порядка ингредиентов
     def test_move_ingredient(self):
         burger = Burger()
         mock_ingredient_1 = Mock()

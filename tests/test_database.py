@@ -10,7 +10,7 @@ class TestDatabase:
         buns = data.available_buns()
         assert len(buns) == 3
 
-    # Тест на получение количества доступных ингeидиентов
+    # Тест на получение количества доступных ингредиентов
     def test_available_ingredients(self):
         data = Database()
         buns = data.available_ingredients()
